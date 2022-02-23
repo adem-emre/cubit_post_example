@@ -1,5 +1,6 @@
 import 'package:cubit_post_example/features/posts/model/post_model.dart';
 import 'package:cubit_post_example/features/posts/service/post_service.dart';
+import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:meta/meta.dart';
 

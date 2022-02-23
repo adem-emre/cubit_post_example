@@ -1,9 +1,16 @@
 part of 'post_cubit.dart';
 
 @immutable
-abstract class PostState{}
+abstract class PostState extends Equatable{
 
-class PostInitial extends PostState {}
+  @override
+  List<Object?> get props => [];
+
+
+}
+
+class PostInitial extends PostState {
+}
 
 class PostLoading extends PostState {}
 
@@ -12,6 +19,9 @@ class PostCompleted extends PostState {
   PostCompleted(
      this.posts,
   );
+
+  @override
+  List<Object?> get props => [posts];
 }
 
 class PostError extends PostState {}
