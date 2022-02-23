@@ -14,7 +14,7 @@ class PostService{
       return posts;
       
     }else{
-      throw Exception();
+      throw Exception("${response.statusCode}");
     }
   }
 

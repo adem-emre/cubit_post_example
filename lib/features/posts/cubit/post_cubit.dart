@@ -14,8 +14,8 @@ class PostCubit extends Cubit<PostState> {
       emit(PostLoading());
       List<PostModel> postList = await PostService().fetchPosts();
       emit(PostCompleted(postList));
-    } catch (e) {
-      emit(PostError());
+    } catch (error) {
+      emit(PostError(error.toString()));
     }
   }
 }

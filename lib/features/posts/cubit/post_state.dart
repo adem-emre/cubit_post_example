@@ -24,7 +24,11 @@ class PostCompleted extends PostState {
   List<Object?> get props => [posts];
 }
 
-class PostError extends PostState {}
+class PostError extends PostState {
+  final String errorMessage;
+
+  PostError(this.errorMessage);
+}
 
 
 

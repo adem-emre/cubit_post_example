@@ -58,7 +58,7 @@ class PostView extends StatelessWidget {
                 );
               });
           }else{
-            return const Text("Bir Hata Oluştu");
+            return  Text("Bir Hata Oluştu : ${(state as PostError).errorMessage}");
           }
         },
       ),
